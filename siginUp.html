@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <!-- css file attche -->
+    <link rel="stylesheet" href="/css/signup.css" />
+    <title>Sigin Up</title>
+  </head>
+
+  <body>
+  <!-- Registratio -->
+  <div id="page" class="page-sign-up">
+
+   <div class="form signup">
+          <span class="title">Sign Up</span>
+          <form  action="#"  id="form">
+
+            <!-- Name-input -->
+            <div class="form-control input_field">
+              <input type="text" placeholder="Enter your Name" id="name" class="control"/>
+              <i class="fa-solid fa-user icon"></i>
+              <span id="nameError" class="error"></span>
+            </div>
+
+            <!-- Email-input -->
+            <div class="form-control input_field">
+              <input type="text" placeholder="Enter your Email" id="email" class="control"/>
+              <i class="fa-solid fa-envelope icon"></i>
+              <span id="emailError" class="error"></span>
+            </div>
+
+            <!-- Password-input -->
+            <div class="form-control input_field">
+              <input type="password" placeholder="Enter your Password" id="password" class="password control"/>
+              <i class="fa-solid fa-lock icon"></i>
+              <i class="fa-solid fa-eye-slash showHidePw"></i>
+              <span id="passwordError" class="error"></span>
+            </div>
+
+         
+            <div class="checkbox-text">
+              <div class="checkbox-content">
+                <input type="checkbox" id="logcheck" />
+                <label for="logcheck" class="text">Remember me</label>
+              </div>
+              <!-- <a href="#" class="text">Forget password?</a> -->
+            </div>
+
+            <div class="input_field button">
+              <input type="submit" value="Sign Up" />
+            </div>
+          </form>
+
+          <div class="login-signup">
+            <span class="text"
+              >Not a member?
+              <a href="find.html" class="text login-link">Login now</a>
+            </span>
+          </div>
+   </div>
+
+  </div>
+
+
+
+         
+
+
+
+
+
+  
+   
+
+
+    <script src="Script/signup.js"></script>
+  </body>
+</html>
+
+
+ 

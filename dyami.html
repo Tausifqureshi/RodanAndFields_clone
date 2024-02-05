@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation Example</title>
+    <style>
+        /* Your existing CSS here */
+        /* No significant changes were needed */
+    </style>
+</head>
+<body>
+    <form action="https://www.amazon.in" id="form">
+        <div class="input_field">
+          <input type="text" placeholder="Enter your Name" id="name" name="name"/>
+          <i class="fa-solid fa-user icon"></i>
+          <span id="nameError" class="error"></span>
+        </div>
+        <div class="input_field">
+          <input type="text" placeholder="Enter your Email" id="email" name="email"/>
+          <i class="fa-solid fa-envelope icon"></i>
+          <span id="emailError" class="error"></span>
+        </div>
+        <div class="input_field">
+          <input type="password" placeholder="Enter your Password" id="password" name="password" class="password"/>
+          <i class="fa-solid fa-lock icon"></i>
+          <i class="fa-solid fa-eye-slash showHidePw"></i>
+          <span id="passwordError" class="error"></span>
+        </div>
+        <button>Sign up</button>
+    </form>
+      
+    <script>
+        let form = document.getElementById("form");
+         let userName = document.getElementById("name")  
+         let email  = document.getElementById("email");
+        form.addEventListener("submit", (e)=>{
+          e.preventDefault()
+          signup()
+        
+        })
+
+        function  signup(){
+         if(userName.value.trim()=== ""){
+           userName.style.outline = '2px solid red';
+           userName.style.border - 'none'
+           return false
+         }
+         else{
+          userName.style.outline = '2px solid green';
+           userName.style.border - 'none'
+           return true
+         }
+
+         if(email.value.trim()=== ""){
+           email.style.outline = '2px solid red';
+           email.style.border - 'none'
+           return false
+         }
+
+         else{
+           email.style.outline = '2px solid green';
+           email.style.border - 'none'
+           return true
+         }
+
+        }
+        
+
+    </script>
+</body>
+</html>
